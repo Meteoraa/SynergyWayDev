@@ -4,9 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to open project
 
-  1)Install Node JS with default settings for everything
+   1)Install Node JS with default settings for everything
       https://nodejs.org/en/download/
-    2)Download Visual Studio Code:
+     2)Download Visual Studio Code:
      https://code.visualstudio.com/download
        3)Open PowerShell in admin mode. Install Angular CLI: "npm install @angular/cli"
          4)Build app and start server : "ng serve"
