@@ -1,0 +1,10 @@
+<div class="cart-container" *ngFor="let cartItem of cart; index as i">
+    <button disabled mat-mini-fab class="cart-avatar"
+        [ngStyle]="{ 'background-image': 'url(' + cartItem.product.imageUrl + ')'}"></button>
+    <div class="cart-text">Title: {{cartItem.product.name}}</div>
+    <div class="cart-text">Quantity: <input class="cart-input" type="number" min="1" (change)="cartService.quantityChanged()"
+            [(ngModel)]="cartItem.quantity" /></div>
+    <div class="cart-text">Price: {{cartItem.product.price * cartItem.quantity}}$</div>
+    <button (click)="cartService.removeFromCart(i)" class="btn btn-danger">Remove</button>
+</div>
+<div class="total-price">Total Price: {{cartService.getTotalPrice()}}$</div>

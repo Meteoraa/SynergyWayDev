@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.toolbar {
+    background-color:#3a3f45;
+}
+.games-list, .cart-link{
+    color: white;
+    opacity: 0.9;
+    font-weight: 700;
+}
+.games-list:hover, .cart-link:hover {
+    text-decoration: none;
+    color: royalblue;
+    transform: scale(1.2);
+    transition: all 0.5s;
+}

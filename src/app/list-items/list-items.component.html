@@ -1,0 +1,45 @@
+<h1 class="text-center">Games of the Year</h1>
+<div class="container first-block">
+    <div class="row" *ngFor="let product of products">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <img [src]="product.imageUrl" class="img-fluid main-game">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="name-of-game">{{product.name}}</h2>
+            <p class="main-game-desc">{{product.label}}</p>
+            <p><span class="game-price">Price:</span> {{product.price}}$ </p>
+            <button mat-raised-button color="warn" (click)="cardService.addToCart(product)">Buy</button>
+            <hr color="black">
+        </div>
+    </div>
+</div>
+<h2 class="soon">Will Available Soon</h2>
+<div class="container pt-5 pb-5 second-block">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="box1">
+                <img src="../../assets/images/batman.jpg" class="img-fluid">
+                <p>Batman: Arkham Knight is a action-adventure game developed by Rocksteady Studios and published by
+                    Warner Bros.</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="box2 pt-1">
+                <img src="../../assets/images/border.jpg" class="img-fluid">
+            </div>
+            <div class="box3 pt-1">
+                <img src="../../assets/images/civ.jpg" class="img-fluid">
+            </div>
+            <div class="box4 pt-1">
+                <img src="../../assets/images/redemption .jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="box5 pt-1">
+                <img src="../../assets/images/devil.jpg" class="img-fluid">
+                <p>Devil May Cry 5 is an action-adventure hack and slash video game developed and published by Capcom.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

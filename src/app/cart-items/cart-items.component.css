@@ -1,0 +1,26 @@
+.cart-avatar {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.cart-container {
+    padding-top: 30px;
+    padding-left: 30px;
+    display: inline-block;
+}
+.cart-text {
+    padding-bottom: 10px;
+}
+.total-price {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+.cart-input {
+    margin-left: 7px;
+    width: 30%;
+}
