@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
 
-How to open project
+## How to open project
 
   1)Install Node JS with default settings for everything
       https://nodejs.org/en/download/
